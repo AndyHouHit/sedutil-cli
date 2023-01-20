@@ -1449,7 +1449,7 @@ uint8_t DtaDevOpal::takeOwnership(char * newpassword, bool securemode)
 		LOG(E) << "Unable to read MSID password ";
 		return lastRC;
 	}
-	if ((lastRC = setSIDPassword((char *)response.getString(4).c_str(), newpassword, 0, 1, securemode)) != 0) {
+	if ((lastRC = setSIDPassword((char *)response.getString(4).c_str(), newpassword, 0, 0, securemode)) != 0) {
 		LOG(E) << "takeOwnership failed";
 		return lastRC;
 	}

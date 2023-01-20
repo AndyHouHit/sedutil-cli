@@ -82,7 +82,7 @@ public:
          * @param securemode is the new password should be interactively asked
          */ 
 	uint8_t setSIDPassword(char * oldpassword, char * newpassword,
-		uint8_t hasholdpwd = 1, uint8_t hashnewpwd = 1, bool securemode = false);
+		uint8_t hasholdpwd = 0, uint8_t hashnewpwd = 0, bool securemode = false);
          /** set a single column in an object table 
          * @param table the UID of the table
          * @param name the column name to be set

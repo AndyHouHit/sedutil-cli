@@ -98,7 +98,7 @@ private:
     uint32_t TSN = 0;   /**< TPer session number */
     uint32_t HSN = 0;  /**< Host session number */
     uint8_t willAbort = 0;   /**< Command is expected to abort */
-	uint8_t hashPwd = 1;  /**< hash the password when authenticating */
+	uint8_t hashPwd = 0;  /**< hash the password when authenticating */
     uint8_t SecurityProtocol = 0x01;  /**< The seurity protocol to be used */
 	uint8_t lastRC;  /**< last return code */
 	uint8_t sessionauth; /** authid for multistart */
